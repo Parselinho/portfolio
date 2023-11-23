@@ -15,6 +15,42 @@ class Home {
         url: "https://react2.online",
         href: "/courses",
       },
+      {
+        title: "Employees API",
+        description: `This project is a sophisticated web application meticulously crafted to manage and exhibit a comprehensive list of students. It is a quintessential example of dynamic and responsive design, employing the foundational trio of web development: HTML, CSS, and JavaScript, to create a seamless user experience.`,
+        url: "https://parselinho.github.io/employees/",
+        href: "/employees",
+      },
+      {
+        title: "FSConference",
+        description: `This project showcases a comprehensive registration form for a Full Stack Conference, where I honed my skills in creating dynamic and interactive web forms. The core of the project lies in JavaScript's interactivity and form validation logic, alongside building a responsive layout using CSS. Key technologies include HTML CSS and JavaScript.`,
+        url: "https://parselinho.github.io/FSConference/",
+        href: "/fsconference",
+      },
+      {
+        title: "Phrase",
+        description: `In this project, I developed an engaging and interactive web game titled 'Phrase Hunter'. I implemented the game logic using vanilla JavaScript, focusing on object-oriented programming principles.`,
+        url: "https://parselinho.github.io/Phrase-Hunter/",
+        href: "/phrase-hunter",
+      },
+      {
+        title: "Circle",
+        description: `In this project, titled 'Circles UI Kit', I explored and integrated Sass for the first time in my web development studies.`,
+        url: "https://parselinho.github.io/circleProject/",
+        href: "/circle",
+      },
+      {
+        title: "Gallery",
+        description: `A visually captivating and interactive photo gallery website. The heart of the gallery is a grid layout showcasing a collection of photographs, each accompanied by a descriptive caption.`,
+        url: "https://parselinho.github.io/galleryProject/",
+        href: "/gallery",
+      },
+      {
+        title: "WebApp",
+        description: `The dashboard includes interactive data visualizations such as a line graph, bar graph, and doughnut chart, created using Chart.js to display various data metrics. These interactive charts offer insights into traffic patterns, daily activity, and mobile user demographics.`,
+        url: "https://parselinho.github.io/webApp/",
+        href: "/webapp",
+      },
     ];
   }
 
@@ -25,8 +61,10 @@ class Home {
         <div class='cardContainer'>
           <h2>${card.title}</h2>
           <p>${card.description}</p>
+          <div class="cardLinks">
           <a href="${card.href}" title="navigate to the project page">More Info</a>
           <a href='${card.url}' target='_blank' rel="noopener" title="navigate to the project website">Visit Website</a>
+          <div>
         </div>
       </li>
     `;

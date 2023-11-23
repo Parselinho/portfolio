@@ -5,6 +5,12 @@ import Resume from "../src/components/Resume.js";
 
 import Weblogal from "../src/components/projects/Weblogal.js";
 import Courses from "../src/components/projects/Courses.js";
+import Employees from "../src/components/projects/Employees.js";
+import Fsconference from "../src/components/projects/Fsconference.js";
+import PhraseHunter from "../src/components/projects/Phrase.js";
+import Circle from "../src/components/projects/Circle.js";
+import Gallery from "../src/components/projects/Gallery.js";
+import WebApp from "../src/components/projects/Webapp.js";
 
 document.addEventListener("DOMContentLoaded", initApp);
 
@@ -29,9 +35,15 @@ const pages = {
   404: NotFound,
   "/": Home,
   "/about": About,
+  "/resume": Resume,
   "/weblogal": Weblogal,
   "/courses": Courses,
-  "/resume": Resume,
+  "/employees": Employees,
+  "/fsconference": Fsconference,
+  "/phrase-hunter": PhraseHunter,
+  "/circle": Circle,
+  "/gallery": Gallery,
+  "/webapp": WebApp,
 };
 
 function route(e) {

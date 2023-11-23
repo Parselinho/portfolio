@@ -1,12 +1,32 @@
 const renderProject = (project) => {
-  const backendList = project.backendList
-    .map(
-      (item) => `
-    <li>${item.listTitle}<p>${item.listDescription}</p></li>`
-    )
-    .join("");
+  // if (!project.backendList) {
+  //   return `
+  //     <li>
+  //       <p>Used only frontend tech</p>
+  //     </li>
+  //   `;
+  // }
+  const isBackendList = project.backendList;
+  let backendList;
+  if (!isBackendList) {
+    backendList = `<li>Used only frontEnd tech</li>`;
+  } else {
+    backendList = project.backendList
+      .map(
+        (item) => `
+      <li>${item.listTitle}<p>${item.listDescription}</p></li>`
+      )
+      .join("");
+  }
 
-  const frontList = project.frontendList
+  const isfrontList = project.frontendList;
+  let frontList;
+  if (!isfrontList) {
+    frontList = `<li>
+        Used only BackEnd tech<p></p>
+      </li>`;
+  }
+  frontList = project.frontendList
     .map(
       (item) => `
     <li>${item.listTitle}<p>${item.listDescription}</p></li>`
