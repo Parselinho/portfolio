@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Playpen+Sans:wght@200;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playpen Sans", cursive;
+}
+
+img {
+  display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 150px 2fr;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header" "nav main" "footer footer";
+}
+
+.header {
+  grid-area: header;
+  border-bottom: 2px solid #000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(251, 210, 156);
+  background-image: url("/github4.141c7908.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.h1 {
+  font-size: 200%;
+  color: aliceblue;
+  margin-left: 35px;
+  text-shadow: 2px 2px 5px #000;
+  padding: 0.25rem;
+}
+
+.figureHeader {
+  width: 5%;
+  margin-right: 10px;
+}
+
+.figureHeader img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+.offscreen {
+  display: none;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: hsla(0, 36%, 5%, 0.527);
+  border-bottom: 1px solid black;
+}
+
+.nav a,
+.nav button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 125%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  transition: font-size, background-color 0.2s;
+  display: block;
+  text-align: center;
+  background-color: rgba(49, 45, 45, 0.24);
+  border: 1px black;
+  border-radius: 5px;
+  color: white;
+}
+
+.nav button {
+  margin-bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav button:hover,
+.nav button:focus {
+  font-size: 150%;
+  background-color: hsla(0, 0%, 0%, 0.445);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: rgba(12, 7, 7, 0.6039215686);
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(172, 167, 167, 0.904);
+  z-index: 1;
+  font-size: 0.8rem;
+}
+
+.dropdownContent a {
+  color: white;
+  padding: 7px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.8rem;
+  border-bottom: 1px dotted white;
+}
+
+.dropdownContent a:hover {
+  background-color: #ddd;
+  font-size: 1em;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover {
+  background-color: #2c2727;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropBtn {
+  background-color: #252b26;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  background-color: bisque;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.navFooter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 25px;
+}
+
+.navFooter a img {
+  margin: 10px;
+}
+
+.navFooter a img:hover,
+.navFooter a img:focus {
+  opacity: 0.7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.homeContainer h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.homeDiv {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px;
+}
+
+.homeDiv p {
+  max-width: 70ch;
+}
+
+aside {
+  padding: 5px;
+  margin-top: 25px;
+  border: 1px dotted black;
+  border-radius: 5px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem 2rem 2rem;
+  gap: 10px;
+}
+
+.ul li {
+  list-style-type: none;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: border, box-shadow 0.1s ease-out;
+}
+
+.card:hover {
+  border: 1px dotted black;
+  box-shadow: 18px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardContainer {
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.cardContainer h2 {
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.cardContainer p {
+  color: gray;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.cardContainer button,
+.cardContainer a {
+  font-size: 1rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border: none;
+}
+
+.cardLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLinks :nth-child(1) {
+  background-color: hsl(240, 21%, 33%);
+  transition: background-color 0.1s ease-in-out;
+  color: white;
+}
+
+.cardLinks :nth-child(1):hover,
+.cardLinks :nth-child(1):focus {
+  background-color: hsla(240, 21%, 33%, 0.733);
+}
+
+.cardContainer a {
+  text-align: center;
+  text-decoration: none;
+  background-color: hsl(240, 81%, 11%);
+  transition: background-color 0.1s ease-in-out;
+  color: white;
+}
+
+.cardContainer a:hover,
+.cardContainer a:focus {
+  background-color: hsla(240, 21%, 33%, 0.671);
+}
+
+.heroContainer {
+  color: white;
+  background-color: rgb(251, 210, 156);
+  background-image: url("/black.b2c68466.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.hero {
+  border-bottom: 2px solid #000;
+  color: rgb(6, 209, 255);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: hsla(0, 0%, 0%, 0.452);
+}
+
+.figure {
+  width: 35%;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+.texth2 {
+  color: white;
+  font-size: 200%;
+  text-shadow: 1px 1px 2px rgb(212, 182, 182), 0 0 1em rgb(206, 200, 200), 0 0 0.2em rgb(88, 88, 105);
+  flex-grow: 2;
+}
+
+.textBold {
+  display: flex;
+  flex-flow: column wrap;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.textBold h3 {
+  margin-top: 10px;
+  color: rgb(214, 245, 130);
+}
+
+.textBold ul li {
+  list-style-type: none;
+  margin-top: 5px;
+  border: 1px solid black;
+  background-color: rgba(3, 3, 3, 0.603);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.projectFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+
+.projectNav {
+  padding: 10px;
+}
+
+.projectNav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+  transition: background-color 0.1s ease;
+}
+
+.projectNav a:hover,
+.projectNav a:focus {
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+.resumeMainContainer {
+  margin: 5px;
+}
+
+.resumeMainContainer a,
+.resumeMainContainer li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.resumeAndExperience {
+  display: flex;
+  flex-direction: column;
+}
+
+.resumeHeader {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumeHeader h2 {
+  padding: 5px;
+}
+
+.figureResume {
+  width: 25%;
+}
+
+.figureResume img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+.resumeExperience {
+  padding: 5px;
+}
+
+.resumeExperience > * {
+  padding: 5px;
+}
+
+.resumeExperience p {
+  font-style: italic;
+}
+
+.border {
+  border-bottom: 1px dotted black;
+}
+
+.bordersolid {
+  border-bottom: 3px solid black;
+}
+
+.resumeSide h3 {
+  padding: 4px;
+}
+
+.resumeSide ul,
+.resumeSide p,
+.resumeSide a {
+  padding-bottom: 15px;
+}
+
+.logoAndHeading {
+  display: flex;
+  gap: 5px;
+}
+
+.nopadding p {
+  padding-bottom: 0;
+}
+
+.certDiv {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.certDiv a {
+  color: #0275d8;
+  text-decoration: none;
+  padding: 3px 0;
+  font-size: 0.9em;
+}
+
+.certDiv a:hover,
+.certDiv a:focus {
+  text-decoration: underline;
+  color: #025aa5;
+}
+
+.resumeFinal {
+  text-align: center;
+  padding: 20px;
+}
+
+.whiteText {
+  color: white;
+  font-size: 150%;
+}
+
+@media (min-width: 1000px) {
+  .resumeHeader {
+    flex-flow: column wrap;
+    gap: 20px;
+  }
+  .resumeHeader h2 {
+    font-size: 250%;
+  }
+  .figureResume {
+    width: 15%;
+  }
+  .aboutFigure {
+    width: 15%;
+  }
+}
+@media (max-width: 1018px) {
+  .projectNav {
+    margin: auto;
+  }
+}
+@media (max-width: 503px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+  .figureHeader {
+    width: 15%;
+  }
+  .h1 {
+    font-size: 150%;
+    margin: 15px;
+  }
+  .nav {
+    padding-bottom: 10px;
+  }
+  .nav a,
+  .nav button {
+    text-align: start;
+  }
+  .projectNav {
+    margin: auto;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 400px) {
+  .figure h2 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=/app.581aa3f0.css.map */
