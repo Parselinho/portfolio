@@ -1,5 +1,6 @@
 import image from "../../public/images/aqua2.png";
 import treehouseSvg from "../../public/svg/treehouse.svg";
+
 class Resume {
   render() {
     return `
@@ -58,14 +59,14 @@ class Resume {
           <section class="resumeSide">
             <h3>Education</h3>
   
-            <h4>Ariel University</h4>
+            <h4><a href="https://www.ariel.ac.il/university/minisite/" target='_blank' rel="noopener" title="visit ariel website">Ariel University</a></h4>
             <p>Bachelor's Degree in Criminology and Middle Eastern Studies (Specialization in Terrorism)
             2016-2019</p>
 
             <div class="nopadding">
-            <div class='logoAndHeading ariel'>
+            <div class='logoAndHeading'>
             <img src="${treehouseSvg}" alt="treehouse logo" loading="lazy">
-            <h4>teamTreeHouse</h4>
+            <h4><a href="https://teamtreehouse.com" target='_blank' rel="noopener" title="visit treehouse website">teamTreeHouse</a></h4>
             </div>
             <p>TechDegree in Full Stack JavaScript, and Front End Web Development. 2022-2023</p>
             <div class="certDiv">
@@ -76,8 +77,9 @@ class Resume {
 
             <div class="border"></div>
 
-
+            <div class='logoAndHeading'>
             <h3>Skills</h3>
+            </div>
             <ul>
                 <li>Proficient in Full-Stack Development, with a focus on JavaScript technologies.</li>
                 <li>Strong analytical and problem-solving capabilities.</li>

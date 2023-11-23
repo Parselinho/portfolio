@@ -164,6 +164,7 @@ body {
 .main {
   grid-area: main;
   width: 100%;
+  background-color: bisque;
 }
 // footer section :
 .footer {
@@ -174,6 +175,7 @@ body {
   align-items: center;
   padding: 10px;
 }
+
 // links in footer :
 .navFooter {
   display: flex;
@@ -206,6 +208,17 @@ body {
 
 .homeDiv p {
   max-width: 70ch;
+}
+
+aside {
+  padding: 5px;
+  margin-top: 25px;
+  border: 1px dotted black;
+  border-radius: 5px;
+}
+
+aside a {
+  text-decoration: none;
 }
 // container for list of projects in the home page :
 .ul {
@@ -458,7 +471,9 @@ body {
 // certification links
 .certDiv {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  // width: 10%;
 }
 
 .certDiv a {
@@ -478,10 +493,6 @@ body {
 .resumeFinal {
   text-align: center;
   padding: 20px;
-}
-
-.check {
-  background-image: url("../../public/images/blackblack.jpg");
 }
 
 .whiteText {

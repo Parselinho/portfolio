@@ -46,10 +46,25 @@ class Home {
     <p>I also possess a strong understanding of databases, both SQL and MongoDB, ensuring that the data driving my applications is well-structured and efficiently managed.</p>
     <p>Each project I undertake is an opportunity for growth and learning. I'm constantly expanding my knowledge and skills, driven by a passion for technology and a commitment to delivering high-quality work.</p>
     <p>Take a look around my portfolio to see a showcase of my development journey and the projects that fuel my growth as a developer.</p>
-    </div>
+    <aside>
+          <p>
+            <b>**</b> I'd like to extend my gratitude to
+            <a
+              href="https://www.youtube.com/@DaveGrayTeachesCode"
+              target="_blank"
+              rel="noopener"
+              title="visit dave youtube channel"
+              >Dave Gray</a
+            >
+            for his contributions to the styling elements used in this project.
+          </p>
+        </aside>  
+      </div>
+
     </div>
 
       <ul class="ul">${this.setCardData()}  </ul>
+
       `;
   }
 }
