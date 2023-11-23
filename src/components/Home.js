@@ -94,7 +94,7 @@ class Home {
               title="visit dave youtube channel"
               >Dave Gray</a
             >
-            for his contributions to the styling elements used in this project.
+            for his youtube video about css, that helped me style this project.
           </p>
         </aside>  
       </div>

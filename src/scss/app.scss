@@ -27,9 +27,7 @@ body {
   min-height: 100vh;
   grid-template-columns: 150px 2fr;
   min-height: 100vh;
-  // grid-auto-rows: 1fr;
   grid-template-rows: auto 1fr auto;
-  // grid-column-gap: 10px;
   grid-template-areas: "header header" "nav main" "footer footer";
 }
 
@@ -54,9 +52,7 @@ body {
   color: aliceblue;
   margin-left: 35px;
   text-shadow: 2px 2px 5px #000;
-  // background-color: hsla(0, 0%, 0%, 0.397);
   padding: 0.25rem;
-  // border-radius: 10px;
 }
 
 .figureHeader {
@@ -120,9 +116,6 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 .dropdownContent {
@@ -330,7 +323,6 @@ aside a {
   align-items: center;
   gap: 30px;
   background-color: hsla(0, 0%, 0%, 0.452);
-  // background-color: hsla(0, 0%, 100%, 0.452);
 }
 
 .figure {
@@ -430,8 +422,6 @@ aside a {
 // resume profile picture
 .figureResume {
   width: 25%;
-  // padding: 0.5rem;
-  // margin: auto;
 }
 .figureResume img {
   width: 100%;
@@ -563,7 +553,6 @@ aside a {
   .projectNav {
     margin: auto;
     white-space: nowrap;
-    // flex-direction: column;
   }
 }
 @media (max-width: 400px) {
